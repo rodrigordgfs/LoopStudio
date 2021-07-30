@@ -109,6 +109,21 @@
       }
     }
 
+    #vr {
+      #vr__container {
+        flex-direction: column;
+        #vr__image {
+          flex: none;
+          width: 400px;
+          height: 400px;
+        }
+        #vr__content {
+          margin-top: 20px;
+          text-align: center;
+        }
+      }
+    }
+
     #footer {
       #footer__container {
         flex-direction: column;
