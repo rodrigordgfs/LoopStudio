@@ -113,6 +113,138 @@ $josefin: "Josefin Sans", sans-serif;
     }
 }
 
+#creations {
+    #creations__container {
+        max-width: 960px;
+        margin: 0 auto;
+        display: flex; 
+        padding: 0 10px 100px 0;
+        flex-direction: column;
+        #creations__header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: uppercase;
+            font-family: $josefin;
+            h2 {
+                font-size: 3rem;
+                color: $black;
+            }
+            a {
+                color: $white;
+                background: $black;
+                padding: 10px 25px;
+                transition: 0.2s ease-in-out;
+                &:hover {
+                    background: $dark-gray;
+                }
+            }
+        }
+        #creations__content {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px; 
+            .creations__item { 
+                position: relative;
+                cursor: pointer;
+                p {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 10px;  
+                    font-family: $josefin;
+                    color: $white;
+                    text-transform: uppercase;
+                    font-size: 34px;
+                }
+            }
+            #item_1 {
+                width: 230px; 
+                height: 400px;
+                filter: brightness(0.5);
+                background-image: url("../../assets/images/desktop/image-deep-earth.jpg");
+                transition: 0.2s ease-in-out;
+                &:hover {
+                    filter: brightness(0.2); 
+                }
+            }
+            #item_2 {
+                width: 230px; 
+                height: 400px;
+                filter: brightness(0.5);
+                background-image: url("../../assets/images/desktop/image-night-arcade.jpg");
+                transition: 0.2s ease-in-out;
+                &:hover {
+                    filter: brightness(0.2); 
+                }
+            }
+            #item_3 {
+                width: 230px; 
+                height: 400px;
+                filter: brightness(0.5);
+                background-image: url("../../assets/images/desktop/image-soccer-team.jpg");
+                transition: 0.2s ease-in-out;
+                &:hover {
+                    filter: brightness(0.2); 
+                }
+            }
+            #item_4 {
+                width: 230px; 
+                height: 400px;
+                filter: brightness(0.5);
+                background-image: url("../../assets/images/desktop/image-grid.jpg");
+                transition: 0.2s ease-in-out;
+                &:hover {
+                    filter: brightness(0.2); 
+                }
+            }
+            #item_5 {
+                width: 230px; 
+                height: 400px;
+                filter: brightness(0.5);
+                background-image: url("../../assets/images/desktop/image-from-above.jpg");
+                transition: 0.2s ease-in-out;
+                &:hover {
+                    filter: brightness(0.2); 
+                }
+            }
+            #item_6 {
+                width: 230px; 
+                height: 400px;
+                filter: brightness(0.5);
+                background-image: url("../../assets/images/desktop/image-pocket-borealis.jpg");
+                transition: 0.2s ease-in-out;
+                &:hover {
+                    filter: brightness(0.2); 
+                }
+            }
+            #item_7 {
+                width: 230px; 
+                height: 400px;
+                filter: brightness(0.5);
+                background-image: url("../../assets/images/desktop/image-curiosity.jpg");
+                transition: 0.2s ease-in-out;
+                &:hover {
+                    filter: brightness(0.2); 
+                }
+            }
+            #item_8 {
+                width: 230px; 
+                height: 400px;
+                filter: brightness(0.5);
+                background-image: url("../../assets/images/desktop/image-fisheye.jpg");
+                transition: 0.2s ease-in-out;
+                &:hover {
+                    filter: brightness(0.2); 
+                }
+            }
+        }
+    }
+}
+
 #footer {
     background: $black;
     #footer__container {
