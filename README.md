@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Github repository: [Click here to access](https://github.com/rodrigordgfs/LoopStudio)
-- Live Site URL: [Click here to access](https://shinodalabs.com.br/projects/loopstudios/)
+- Live Site URL: [Click here to access](http://projects.shinodalabs.com.br/loopstudios/)
 
 ## My process
 
