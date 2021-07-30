@@ -5,3 +5,173 @@ $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 0%);
 $gray: hsl(0, 0%, 55%);
 $dark-gray: hsl(0, 0%, 41%);
+
+$alata: 'Alata', sans-serif;
+$josefin: 'Josefin Sans', sans-serif;
+
+#header__info {
+    width: 100%;
+    height: 500px; 
+    background-image: url("../../assets/images/desktop/image-hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    #header {
+        padding: 30px 10px 0 10px;  
+        max-width: 960px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        a {
+            #menu__brand {  
+                width: 200px;
+                height: 35px;
+            }
+        }
+        #menu {
+            #menu__items {
+                display: flex;  
+                gap: 20px;
+                li {
+                    a {
+                        display: block;
+                        color: $white;
+                        font-family: $alata;
+                        transition: .5s;
+                        &:hover {
+                            color: $gray;
+                        }
+                    }
+                }
+            }
+            #btn-mobile {
+                display: none;
+            }
+        }
+    }
+    #characteristics {
+        max-width: 960px;  
+        margin: 0 auto;  
+        padding: 80px 10px 0 10px;
+        #characteristics__items {  
+            border: 3px solid $white;
+            padding: 40px;   
+            max-width: 445px; 
+            li {
+                text-transform: uppercase;
+                color: $white;
+                font-family: $josefin;
+                font-size: 48px;  
+                font-weight: 300;
+                letter-spacing: 5px;
+            }
+        }
+    }
+}
+
+/* Tablets */
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+    #header__info {
+        #characteristics {
+            #characteristics__items {
+                max-width: 350px;
+                li {
+                    font-size: 36px;  
+                }
+            }
+        }
+    }
+}
+
+/* Smartphone */
+@media only screen and (max-width: 787px) {
+    #header__info {
+        height: 400px; 
+        #header { 
+            #menu {
+                button {
+                    color: #fff;
+                    font-weight: bold;
+                    font-family: $josefin;
+                    text-transform: uppercase;
+                    letter-spacing: 0.1em;
+                    font-size: 14px;
+                    line-height: 20px;
+                    #hamburguer {
+                        width: 20px;
+                        border-top: 2px solid;
+                        display: block;
+                        &::after, &::before {
+                            content: "";
+                            width: 20px;
+                            height: 2px;
+                            background: currentColor;
+                            display: block;
+                            margin-top: 5px;
+                            transition: 0.3s;
+                            position: relative;
+                        }
+                    }
+                }
+                #btn-mobile {
+                    display: flex;
+                    padding: 0.5rem 1rem;
+                    font-size: 1rem;
+                    border: none;
+                    background: none;
+                    cursor: pointer;
+                    gap: 0.5rem;
+                }
+                #menu__items {
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 0;
+                    top: 90px;
+                    right: 0;
+                    background: $black;  
+                    z-index: 1000;
+                    transition: 0.6s;
+                    visibility: hidden;
+                    overflow-y: hidden;
+                    li {
+                        a {
+                            padding: 1rem;
+                            margin: 0 1rem;
+                            border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+                        }
+                    } 
+                }
+            }
+            #menu.active #menu__items {
+                height: calc(100vh - 70px);
+                visibility: visible;
+                overflow-y: auto;
+            }
+            #menu.active #hamburguer {
+                border-top-color: transparent;
+            }
+            #menu.active #hamburguer::before {
+                transform: rotate(135deg);
+            }
+            #menu.active #hamburguer::after {
+                transform: rotate(-135deg);
+                top: -7px;
+            }
+        }
+        #characteristics {
+            padding-top: 65px;  
+            #characteristics__items {
+                max-width: 255px;
+                margin: 0 auto;
+                li {
+                    font-size: 24px;  
+                }
+            }
+        }
+    }
+}

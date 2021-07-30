@@ -5,13 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoopStudio</title>
-    
     <link rel="stylesheet" href="style/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <section id="header__info">
+        <header id="header">
+            <a href="#">
+                <img src="assets/logo/logo.svg" alt="Logo LoopStudio" id="menu__brand">
+            </a>
+            <nav id="menu">
+                <button aria-label="Abrir menu" id="btn-mobile" aria-haspop="true" aria-controls="menu" aria-expanded="false">
+                    Menu
+                    <span id="hamburguer"></span>
+                  </button>
+                <ul id="menu__items" role="menu">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Carrers</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="characteristics">
+            <ul id="characteristics__items">
+                <li>Immersive</li>
+                <li>Experiences</li>
+                <li>Thaht Deliver</li>
+            </ul>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
 </body>
 </html>
