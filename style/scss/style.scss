@@ -5,6 +5,8 @@ $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 0%);
 $gray: hsl(0, 0%, 55%);
 $dark-gray: hsl(0, 0%, 41%);
+$pink: #FF31FF;
+$dark-pink: #ce2ece;
 
 $alata: "Alata", sans-serif;
 $josefin: "Josefin Sans", sans-serif;
@@ -320,6 +322,23 @@ $josefin: "Josefin Sans", sans-serif;
         }
       }
     }
+  }
+}
+
+#btn-share {
+  background-color: $pink;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 11px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px; 
+  right: 10px;
+  z-index: 999;
+  box-shadow: 0px 0px 10px 1px $black;
+  &:hover {
+    background-color: $dark-pink;
   }
 }
 
